@@ -1,0 +1,40 @@
+---
+title: "Ver todos os feedbacks de um bot"
+api: "GET https://skybotlist.online/api/bots/{id}/feedbacks"
+description: "Veja os feedbacks de um bot."
+---
+
+<ParamField header="Authorization" type="string" placeholder="Bearer *">
+Token gerado pelo oauth2
+</ParamField>
+<ParamField type="string" path="id" required>
+  Id do bot
+</ParamField>
+
+<ResponseExample>
+```json Response
+{
+  "feedbacks": [
+    {
+      "user_id": "761023505084579870",
+      "stars": 5,
+      "message": "Melhor bot",
+      "created_at": "2024-02-09T20:15:30.841Z",
+      "last_modified": "2024-02-16T12:42:16.816Z",
+      "user": {
+        "id": "761023505084579870",
+        "bot": false,
+        "system": false,
+        "flags": 0,
+        "username": "murilo.22",
+        "globalName": "Murilo_22",
+        "discriminator": "0",
+        "avatar": "https://cdn.discordapp.com/avatars/761023505084579870/12fd7e7913711fb578d529b10b005717.png?size=512",
+        "avatarDecoration": null
+      },
+      "me": true
+    }
+  ]
+}
+```
+</ResponseExample>

@@ -1,0 +1,95 @@
+---
+title: "Ver bots"
+api: "GET https://skybotlist.online/api/bots"
+description: "Veja até 30 bots de uma vez."
+---
+
+<ParamField header="Authorization" type="string" placeholder="Bearer *">
+Token gerado pelo oauth2
+</ParamField>
+<ParamField type="integer" query="min">
+  O começo dos bots
+</ParamField>
+<ParamField type="integer" query="max">
+  O fim dos bots
+</ParamField>
+
+<ResponseExample>
+```json Response
+[
+	{
+		"_id": "1204793962313818173",
+		"description": "Um bot de rpg foda",
+		"owner_id": "1191182152331698196",
+		"status": 2,
+		"sent": 1707356642841,
+		"approved": 1707356719469,
+		"prefixos": [
+			"R."
+		],
+		"__v": 20,
+		"tags": [
+			"rpg",
+			"foda"
+		],
+		"votes": {
+			"me": null,
+			"count": 12,
+			"votes": 64
+		},
+		"feedbacks": {
+			"count": 6,
+			"stars": 4.33
+		},
+		"user": {
+			"id": "1204793962313818173",
+			"bot": true,
+			"system": false,
+			"flags": 0,
+			"username": "Rex",
+			"globalName": null,
+			"discriminator": "5873",
+			"avatar": "https://cdn.discordapp.com/avatars/1204793962313818173/29c7d107ad4bc43cca4a0d85097435da.png?size=4096",
+			"avatarDecoration": null
+		}
+	},
+	{
+		"_id": "1199771925220687944",
+		"description": "Um bot de economia, moderação, e com novos updates futuros;",
+		"owner_id": "1025885871477637243",
+		"status": 2,
+		"sent": 1707353358230,
+		"approved": 1707354071187,
+		"prefixos": [
+			"!*"
+		],
+		"__v": 15,
+		"tags": [
+			"economia",
+			"moderação",
+			"queijo"
+		],
+		"votes": {
+			"me": null,
+			"count": 12,
+			"votes": 51
+		},
+		"feedbacks": {
+			"count": 3,
+			"stars": 4.67
+		},
+		"user": {
+			"id": "1199771925220687944",
+			"bot": true,
+			"system": false,
+			"flags": 0,
+			"username": "Mussarelo",
+			"globalName": null,
+			"discriminator": "9962",
+			"avatar": "https://cdn.discordapp.com/avatars/1199771925220687944/cb2203d4e6fe6813c75bbbffb6aba265.png?size=4096",
+			"avatarDecoration": null
+		}
+	}
+]
+```
+</ResponseExample>

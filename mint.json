@@ -1,6 +1,5 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "SkyBotList - Documentação",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -17,13 +16,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Comunidade",
+      "url": "https://discord.gg/UkWPrRQeFj"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Site",
+    "url": "https://skybotlist.online"
   },
   "tabs": [
     {
@@ -33,53 +32,30 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Documentação",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.skybotlist.online"
     },
     {
-      "name": "Community",
+      "name": "Discord Oficial",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://discord.gg/UkWPrRQeFj"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Docs da api",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "api-reference/intro"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Páginas do bot",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/bots/getall",
+        "api-reference/bots/getone",
+        "api-reference/bots/feedbacks/getall",
+        "api-reference/bots/votes/vote"
       ]
     }
   ],

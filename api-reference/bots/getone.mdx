@@ -1,0 +1,53 @@
+---
+title: "Ver bot"
+api: "GET https://skybotlist.online/api/bots/{id}"
+description: "Veja as informações básicas de um bot."
+---
+
+<ParamField header="Authorization" type="string" placeholder="Bearer *">
+Token gerado pelo oauth2
+</ParamField>
+<ParamField type="string" path="id" required>
+  Id do bot
+</ParamField>
+
+<ResponseExample>
+```json Response
+{
+		"_id": "1204793962313818173",
+		"description": "Um bot de rpg foda",
+		"owner_id": "1191182152331698196",
+		"status": 2,
+		"sent": 1707356642841,
+		"approved": 1707356719469,
+		"prefixos": [
+			"R."
+		],
+		"__v": 20,
+		"tags": [
+			"rpg",
+			"foda"
+		],
+		"votes": {
+			"me": null,
+			"count": 12,
+			"votes": 64
+		},
+		"feedbacks": {
+			"count": 6,
+			"stars": 4.33
+		},
+		"user": {
+			"id": "1204793962313818173",
+			"bot": true,
+			"system": false,
+			"flags": 0,
+			"username": "Rex",
+			"globalName": null,
+			"discriminator": "5873",
+			"avatar": "https://cdn.discordapp.com/avatars/1204793962313818173/29c7d107ad4bc43cca4a0d85097435da.png?size=4096",
+			"avatarDecoration": null
+		}
+	}
+```
+</ResponseExample>

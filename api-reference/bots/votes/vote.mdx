@@ -1,0 +1,20 @@
+---
+title: "Votar em um bot"
+api: "POST https://skybotlist.online/api/bots/{id}/votes"
+description: "Vote em um bot"
+---
+
+<ParamField header="Authorization" type="string" placeholder="Bearer *" required>
+Token gerado pelo oauth2
+</ParamField>
+<ParamField type="string" path="id" required>
+  Id do bot
+</ParamField>
+
+<ResponseExample>
+```json Response
+{
+    "voted": true
+}
+```
+</ResponseExample>
