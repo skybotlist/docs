@@ -4,8 +4,8 @@ api: "POST https://skybotlist.online/api/bots/{id}/votes"
 description: "Vote em um bot"
 ---
 
-<ParamField header="Authorization" type="string" placeholder="Bearer *" required>
-Token gerado pelo oauth2
+<ParamField header="Authorization" type="string" required>
+Token de acesso
 </ParamField>
 <ParamField type="string" path="id" required>
   Id do bot

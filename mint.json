@@ -55,7 +55,8 @@
         "api-reference/bots/getall",
         "api-reference/bots/getone",
         "api-reference/bots/feedbacks/getall",
-        "api-reference/bots/votes/vote"
+        "api-reference/bots/votes/vote",
+        "api-reference/bots/votes/getall"
       ]
     }
   ],

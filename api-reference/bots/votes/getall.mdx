@@ -1,0 +1,35 @@
+---
+title: "Ver todos os votos de um bot"
+api: "GET https://skybotlist.online/api/bots/{id}/votes"
+description: "Veja todos os votos de um bot seu"
+---
+
+<ParamField header="Authorization" type="string" required>
+Token de acesso
+</ParamField>
+<ParamField type="string" path="id" required>
+  Id do bot
+</ParamField>
+
+<ResponseExample>
+```json Response
+[
+    {
+        "user_id": "1234567890",
+        "votes": 10,
+        "last_vote":1708824046359
+    },
+    {
+        "user_id": "2345678901",
+        "votes": 1,
+        "last_vote":1706042075354
+    },
+    {
+        "user_id": "3456789012",
+        "votes": 5,
+        "last_vote":1706008142312
+    },
+    
+]
+```
+</ResponseExample>
