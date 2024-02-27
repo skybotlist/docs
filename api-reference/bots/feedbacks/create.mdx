@@ -1,0 +1,30 @@
+---
+title: "Criar feedbacks"
+api: "POST https://skybotlist.online/api/bots/{id}/feedbacks"
+description: "Cria um feedback em um bot"
+---
+
+<ParamField header="Authorization" type="string" placeholder="Bearer *">
+Token de acesso
+</ParamField>
+<ParamField type="number" body="stars" min="1" max="5" required>
+  Quantidade de estrelas
+</ParamField>
+<ParamField type="number" body="message" required>
+  Mensagem de feedback
+</ParamField>
+
+<ResponseExample>
+```json Response
+{
+  "created": true,
+  "data":{
+    "user_id": "12345678901234",
+    "message":"Bot muitoo fodaaaaaa",
+    "created_at":"2024-02-27T21:33:32.649Z",
+    "last_modified":-1,
+    "stars": 5
+  }
+}
+```
+</ResponseExample>
